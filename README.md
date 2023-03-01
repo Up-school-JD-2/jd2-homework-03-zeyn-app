@@ -18,9 +18,11 @@ Kullanıcıdan tahmin almadan önce 1-100 arasında rastgele olacak bir sayı ü
 
 
 ## 2. 
-
 -  Kullanıcılardan bir kelime girmelerini isteyecek ve kelimenin ters çevrilmiş halini gösterecek bir uygulama yapınız. Ayrıca, kelimenin bir palindrom olup olmadığını kontrol edecektir. Örneğin, "kayak" kelimesi bir palindromdur.
 
 Bu ödevi gerçekleştirmek için, öncelikle kullanıcının girdiği kelimeyi almanız gerekecek. Bunun için, Scanner sınıfını kullanabilirsiniz. Daha sonra, kelimeyi ters çevirmek için bir döngü yazmanız gerekecek. Ters çevrilmiş kelimeyi saklamak için bir String değişkeni kullanabilirsiniz.
+
+
+<ins>[Reverse Word](https://github.com/Up-school-JD-2/jd2-homework-03-zeyn-app/blob/main/PalindromWord.java)</ins>
 
 12.03.2023 23:00'a kadar süreniz vardır.
