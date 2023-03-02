@@ -8,58 +8,64 @@ public class NumberPredictionGame {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
+
 		System.out.print("How many users will play: ");
 		int userCount = scanner.nextInt();
-		
+
+		System.out.print("How many rounds will play: ");
+		int gameCount = scanner.nextInt();
+
 		System.out.println();
-		printLeaderBoard(getPrediction(userCount));
+		printLeaderBoard(getPrediction(userCount, gameCount));
 	}
 
 	public static int generateRandomNumber() {
 		return (int) (Math.random() * 100) + 1;
 	}
 
-	public static int[] getPrediction(int size) {
-		int usersOnGame = size, predictedNumber, random;
+	public static int[] getPrediction(int userCount, int gameCount) {
+		int predictedNumber, randomNumber;
 
-		// All users play at least once.
-		int[] users = new int[size];
-		Arrays.fill(users, 1);
+		// Calculate the prediction of user each round.
+		int[] userPredictionCount = new int[userCount];
+		Arrays.fill(userPredictionCount, 1);
 
-		// If any user find the correct answer, the flag of the user will turn to "true"
-		boolean[] flags = new boolean[size];
-		Arrays.fill(flags, false);
+		// Store the score of users
+		int[] userScore = new int[userCount];
+		Arrays.fill(userScore, 0);
 
 		Scanner scanner = new Scanner(System.in);
-		random = generateRandomNumber();
+		randomNumber = generateRandomNumber();
 
-		// It continues until the last user find the correct number
-		while (usersOnGame > 0) {
-			for (int i = 0; i < size; i++) {
+		while (gameCount > 0) {
+			for (int i = 0; i < userCount; i++) {
 
-				if (!flags[i]) {
-					System.out.print((i + 1) + ". user, please enter your prediction: ");
-					predictedNumber = scanner.nextInt();
+				System.out.print((i + 1) + ". user, please enter your prediction: ");
+				predictedNumber = scanner.nextInt();
 
-					if (predictedNumber == random) {
-						flags[i] = true;
-						usersOnGame--;
-						continue;
-					} else if (predictedNumber > random) {
-						System.out.println("Too high, try again");
-					} else {
-						System.out.println("Too low, try again");
-					}
-					users[i]++;
+				if (predictedNumber == randomNumber) {
+					gameCount--;
+					userScore[i]++;
+
+					System.out.println("\nThe right number is " + randomNumber);
+					System.out.println((i + 1) + ". user found it on --> " + userPredictionCount[i] + ". try\n\n");
+
+					randomNumber = generateRandomNumber();
+					Arrays.fill(userPredictionCount, 1);
+					break;
+				} else if (predictedNumber > randomNumber) {
+					System.out.println("Too high, try again");
+				} else {
+					System.out.println("Too low, try again");
 				}
+				userPredictionCount[i]++;
 			}
 		}
 
-		System.out.println("\n********** GAME OVER **********");
-		System.out.println("The right number is " + random);
+		System.out.println("********** GAME OVER **********");
 
 		scanner.close();
-		return users;
+		return userScore;
 	}
 
 	public static void printLeaderBoard(int[] users) {
@@ -67,7 +73,8 @@ public class NumberPredictionGame {
 		System.out.println("\n\n********** LEADER BOARD **********\n");
 
 		for (int i = 0; i < users.length; i++) {
-			System.out.println((i + 1) + ". user found it on --> " + users[i] + ". try");
+			System.out.println("The score of " + (i + 1) + ". user --> " + users[i]);
 		}
+
 	}
 }
