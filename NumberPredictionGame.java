@@ -26,7 +26,7 @@ public class NumberPredictionGame {
 	public static int[] getPrediction(int userCount, int gameCount) {
 		int predictedNumber, randomNumber;
 
-		// Calculate the prediction of user each round.
+		// Calculate the predictions of users at each round.
 		int[] userPredictionCount = new int[userCount];
 		Arrays.fill(userPredictionCount, 1);
 
@@ -42,6 +42,13 @@ public class NumberPredictionGame {
 
 				System.out.print((i + 1) + ". user, please enter your prediction: ");
 				predictedNumber = scanner.nextInt();
+				
+				// Check if number between 1 and 100
+				while(predictedNumber<1 || predictedNumber>100) {
+					System.out.println("The prediction must be between 1 and 100");
+					System.out.print((i + 1) + ". user, please enter your prediction: ");
+					predictedNumber = scanner.nextInt();
+				}
 
 				if (predictedNumber == randomNumber) {
 					gameCount--;
@@ -62,14 +69,13 @@ public class NumberPredictionGame {
 			}
 		}
 
-		System.out.println("********** GAME OVER **********");
-
 		scanner.close();
 		return userScore;
 	}
 
 	public static void printLeaderBoard(int[] users) {
 
+		System.out.println("********** GAME OVER **********");
 		System.out.println("\n\n********** LEADER BOARD **********\n");
 
 		for (int i = 0; i < users.length; i++) {
