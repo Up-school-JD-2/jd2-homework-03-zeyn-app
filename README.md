@@ -15,6 +15,9 @@ Kullanıcıdan tahmin almadan önce 1-100 arasında rastgele olacak bir sayı ü
 
 ***Bonus : Uygulamayı, birden fazla kullanıcının aynı anda oynayabileceği bir çoklu oyuncu sürümüne dönüştürün.***
 
+<ins>[Number Prediction Game](https://github.com/Up-school-JD-2/jd2-homework-03-zeyn-app/blob/main/PalindromeWord.java)</ins>
+![outputOfGame](https://user-images.githubusercontent.com/64809828/222505333-cbfacb84-ef47-4b9d-b92f-08c4762876b4.png)
+
 
 
 ## 2. 
@@ -23,6 +26,6 @@ Kullanıcıdan tahmin almadan önce 1-100 arasında rastgele olacak bir sayı ü
 Bu ödevi gerçekleştirmek için, öncelikle kullanıcının girdiği kelimeyi almanız gerekecek. Bunun için, Scanner sınıfını kullanabilirsiniz. Daha sonra, kelimeyi ters çevirmek için bir döngü yazmanız gerekecek. Ters çevrilmiş kelimeyi saklamak için bir String değişkeni kullanabilirsiniz.
 
 
-<ins>[Reverse Word](https://github.com/Up-school-JD-2/jd2-homework-03-zeyn-app/blob/main/PalindromWord.java)</ins>
+<ins>[Reverse Word](https://github.com/Up-school-JD-2/jd2-homework-03-zeyn-app/blob/main/PalindromeWord.java)</ins>
 
 12.03.2023 23:00'a kadar süreniz vardır.
