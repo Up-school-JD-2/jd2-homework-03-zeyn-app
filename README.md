@@ -16,7 +16,7 @@ Kullanıcıdan tahmin almadan önce 1-100 arasında rastgele olacak bir sayı ü
 ***Bonus : Uygulamayı, birden fazla kullanıcının aynı anda oynayabileceği bir çoklu oyuncu sürümüne dönüştürün.***
 
 <ins>[Number Prediction Game](https://github.com/Up-school-JD-2/jd2-homework-03-zeyn-app/blob/main/NumberPredictionGame.java)</ins> <br><br>
-![outputOfGame](https://user-images.githubusercontent.com/64809828/222568314-1aa5e75f-ae56-46ed-9ff0-736543e5ccbd.mp4)
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/64809828/222571248-20e673f9-be2c-4abb-bc76-78b632ddf680.gif)
 
 
 
