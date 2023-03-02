@@ -2,7 +2,7 @@ package jd2_Homework_03;
 
 import java.util.Scanner;
 
-public class PalindromWord {
+public class PalindromeWord {
 
 	public static void main(String[] args) {
 		String word, reverseWord;
@@ -15,15 +15,15 @@ public class PalindromWord {
 		reverseWord = reverseWord(word);
 		System.out.println("\nReverse of the \"" + word + "\" is " + reverseWord + "\n");
 
-		if (ispalindrom(word, reverseWord))
-			System.out.println("\"" + word + "\" is a palindrom word.");
+		if (ispalindrome(word, reverseWord))
+			System.out.println("\"" + word + "\" is a palindrome word.");
 
 		else
-			System.out.println("\"" + word + "\" is not a palindrom word.");
+			System.out.println("\"" + word + "\" is not a palindrome word.");
 
 	}
 
-	public static boolean ispalindrom(String word, String reverseWord) {
+	public static boolean ispalindrome(String word, String reverseWord) {
 		return (word.equals(reverseWord));
 
 	}
