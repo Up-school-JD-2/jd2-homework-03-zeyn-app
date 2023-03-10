@@ -26,9 +26,8 @@ Kullanıcıdan tahmin almadan önce 1-100 arasında rastgele olacak bir sayı ü
 Bu ödevi gerçekleştirmek için, öncelikle kullanıcının girdiği kelimeyi almanız gerekecek. Bunun için, Scanner sınıfını kullanabilirsiniz. Daha sonra, kelimeyi ters çevirmek için bir döngü yazmanız gerekecek. Ters çevrilmiş kelimeyi saklamak için bir String değişkeni kullanabilirsiniz.
 
 
-![palindromeWord](https://user-images.githubusercontent.com/64809828/224383963-b3e82325-47b1-4c9f-b2da-454e7ab79a92.png)
-
-![palindromSentence](https://user-images.githubusercontent.com/64809828/224383645-d7e1e1c7-dbb9-4f24-b64a-27a024d1b173.png)
+![palindromeWord2](https://user-images.githubusercontent.com/64809828/224384778-8c3fe407-f0c9-4df6-bdfd-b6deceb12503.png)
+![palindromeSentence](https://user-images.githubusercontent.com/64809828/224384766-5aed7787-2252-407b-bf3e-253e3c4d9a76.png)
 
 <ins>[Reverse Word](https://github.com/Up-school-JD-2/jd2-homework-03-zeyn-app/blob/main/PalindromeWord.java)</ins>
 
