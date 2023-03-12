@@ -29,6 +29,6 @@ Bu ödevi gerçekleştirmek için, öncelikle kullanıcının girdiği kelimeyi 
 ![palindromeWord2](https://user-images.githubusercontent.com/64809828/224384778-8c3fe407-f0c9-4df6-bdfd-b6deceb12503.png)
 ![palindromeSentence](https://user-images.githubusercontent.com/64809828/224384766-5aed7787-2252-407b-bf3e-253e3c4d9a76.png)
 
-<ins>[Reverse Word](https://github.com/Up-school-JD-2/jd2-homework-03-zeyn-app/blob/main/PalindromeWord.java)</ins>
+<ins>[Reverse Word](https://github.com/Up-school-JD-2/jd2-homework-03-zeyn-app/blob/8adaa38fb98e66bfb0d7cae260160099e5b8535f/jd2_Homework_03/src/jd2_Homework_03/PalindromeWord.java#L29)</ins>
 
 12.03.2023 23:00'a kadar süreniz vardır.
